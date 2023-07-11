@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "src/main.tsx",
+      "use": "@vercel/static-build",
+      "config": {
+        "build": {
+          "rollupOptions": {
+            "external": [
+              "bootstrap/dist/css/bootstrap.min.css"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
