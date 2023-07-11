@@ -1,0 +1,134 @@
+#banner{
+  position: relative;
+  overflow: hidden;
+}
+#banner:after{
+  content: '';
+  position: absolute;
+  transform: translateY(0%);
+  background-image: linear-gradient(180deg, rgb(137 195 255 / 50%), transparent);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: banner_gradient 1.5s linear;
+}
+
+@keyframes banner_gradient{
+  0%{transform: translateY(-100%)}
+  100%{transform: translateY(0%)}
+}
+
+.banner_title{
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom:2rem;
+  background: -webkit-linear-gradient(102deg, rgb(0 219 255) 33%, rgb(66 90 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  transition: 0.5s;
+  animation: banner_title 2s ease-out forwards;
+  filter: contrast(5);
+  opacity:0;
+}
+
+@keyframes banner_title{
+  0%{filter: contrast(5); opacity:0}
+  30%{filter: contrast(4); opacity:1}
+  100%{filter:contrast(1); opacity:1}
+}
+
+.banner_text{
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  line-height: 1.4;
+  color: #3e709b;
+  margin-bottom:2rem;
+}
+
+.banner_content{
+  animation: opacity 2.5s 1s ease-out forwards;
+  opacity:0;
+}
+
+@keyframes opacity{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.banner_bottom_text{
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color:rgba(0,0,0,0.5);
+}
+
+.banner_button{
+  background-image: linear-gradient(222deg, rgb(111, 222, 255), rgb(106, 124, 251) 100%);
+  border: 0px !important;
+  outline: solid 2px white;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+  border-radius: 0 !important;
+  transition: 0.3s linear !important;
+}
+
+.banner_button:hover{
+  outline: solid 4px white;
+  filter: contrast(1.5);
+}
+
+.banner-cart-images{
+  position: relative;
+  animation: cart_appear 1s 0.5s ease-out forwards;
+  transform: translateX(100%); opacity: 0;
+}
+
+@keyframes cart_appear{
+  0%{transform: translateX(100%); opacity: 0;}
+  100%{transform: translateX(0%); opacity: 1;}
+}
+
+.cart-image{
+  transition: 0.3s linear;
+}
+.cart-image:hover{
+  transform: translateX(5%);
+}
+
+.cloud-1{
+  position: absolute;
+  top:0%;
+  left:0%;
+  width: 20%;
+  animation: cloud_move 1.5s linear infinite alternate;
+}
+.cloud-2{
+  position: absolute;
+  top:17%;
+  right:5%;
+  width: 20%;
+  animation: cloud_move 1.5s 0.5s linear infinite alternate;
+}
+
+.bag-1{
+  position: absolute;
+  top:-5%;
+  left:20%;
+  width: 21%;
+  animation: bag_move 2s linear infinite alternate;
+}
+.bag-2{
+  position: absolute;
+  top:-7%;
+  left:50%;
+  width: 17%;
+  animation: bag_move 2s 0.8s linear infinite alternate;
+}
+
+@keyframes cloud_move {
+  0%{transform: translate(0%, 0%);}
+  100%{transform: translate(0%, 12%);}
+}
+@keyframes bag_move {
+  0%{transform: translate(0%, 0%) rotate(0);}
+  100%{transform: translate(0%, 8%) rotate(7deg);}
+}

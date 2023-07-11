@@ -1,0 +1,90 @@
+.productInCart{
+  padding:1rem;
+  min-height: 120px;
+  margin-bottom:1rem;
+  border-bottom: solid 1px #bdbdbd;
+  position: relative;
+}
+
+.productInCart .title{
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  display: inline-block;
+  color: #333;
+}
+
+.productInCart .price{
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: darkblue;
+}
+
+.productInCart .image{
+  max-height: 120px;
+}
+
+.quantityButton{
+  height: 30px;
+  width: 30px;
+  border-radius: 0 !important;
+  color: white;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  align-self: center !important;
+  padding: 0 !important;
+  padding-bottom: 4px !important;
+}
+
+.buttonRemoveProduct{
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  width: 30px !important;
+  color: #333 !important;
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.quantityNumber{
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 600;
+  display: inline-block;
+  min-width: clamp(2rem, 2vw, 4rem);
+  padding: 0 0.4rem;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.cartActionTitle{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  display: block;
+  margin-bottom: -5px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.checkoutButton{
+  background-image: linear-gradient(222deg, rgb(111, 222, 255), rgb(106, 124, 251) 100%);
+  border: 0px !important;
+  outline: solid 2px white;
+  font-weight: 600 !important;
+  font-size: clamp(1.2rem, 3vw, 2rem) !important;
+  border-radius: 0 !important;
+  transition: 0.3s linear !important;
+  width: 100%;
+  text-transform: uppercase;
+}
+.checkoutButton:hover {
+  outline: solid 4px white;
+  filter: contrast(1.5);
+}
+
+.totalItems{
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: darkblue;
+}

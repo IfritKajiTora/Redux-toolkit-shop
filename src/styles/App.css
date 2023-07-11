@@ -1,0 +1,87 @@
+*, :before, :after{
+  box-sizing: content-box;
+}
+html{
+  scroll-padding-top: 79px !important;
+}
+
+/*body{
+  background-color: #eee !important;
+}*/
+
+a{
+  text-decoration: none !important;
+}
+
+img{
+  max-width: 100%;
+}
+
+nav{
+  position: fixed !important;
+  top:0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-space{
+  height: 64px;
+}
+.min-height-100vh{
+  min-height: 100vh;
+}
+.min-height-100vh-solo{
+  min-height: calc(100vh - 96px);
+}
+
+.cartCount{
+  background-color: black;
+  background-image: linear-gradient(298deg, rgb(0 219 255) 33%, rgb(66 90 255));
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 30px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 1;
+  bottom: 5px;
+  left: 0;
+}
+
+.primary-title{
+  background: -webkit-linear-gradient(102deg, rgb(0 219 255) 33%, rgb(66 90 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  padding-bottom: 10px;
+}
+
+@media (min-width:400px) and (max-width:574px){
+  .col-xxs-6 {
+    flex: 0 0 auto !important;
+    width: 50% !important;
+  }
+  .col-xxs-4 {
+    flex: 0 0 auto !important;
+    width: 33.3332% !important;
+  }
+}
+
+.navbar{
+  border-bottom: solid 1px #bdbdbd;
+}
+.navbar-brand{
+  font-size: clamp(1rem, 3vw, 2.4rem) !important;
+  background: -webkit-linear-gradient(102deg, rgb(0 219 255) 33%, rgb(66 90 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.navbar-logo{
+  height: auto;
+  width: 50px;
+  margin-right: 0.6rem;
+}

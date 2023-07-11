@@ -1,0 +1,22 @@
+.loading-animation{
+  margin:auto;
+}
+
+.loading-animation span{
+  animation: 2s movingLetters ease-in-out infinite alternate;
+  position: relative;
+  display: inline-block;
+  transition: 2s;
+  transform: translateY(-0%);
+  background: -webkit-linear-gradient(102deg, rgb(0 219 255) 33%, rgb(66 90 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 3.4rem);
+}
+
+@keyframes movingLetters{
+  0%{transform: translateY(-0%);}
+  50%{transform: translateY(-0%);}
+  100%{transform: translateY(-25%);}
+}
